@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/animal_list.css' %}">
+{% endblock head %}
+    
+{% block content %}
+<div class="animals-page">
+    <h2>Your Animals</h2>
+
+    {% if animals %}
+        <ul class="animal-list">
+            {% for animal in animals %}
+                <li class="animal-item">
+                    <a href="{% url 'appointment_list' %}">
+                        {{ animal.name }} - {{ animal.species }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="no-animals">You don't have any animals yet.</p>
+    {% endif %}
+
+    <div class="add-animal">
+        <a href="{% url 'add_animal' %}" class="btn add-animal-btn">Add One</a>
+    </div>
+</div>
+{% endblock %}

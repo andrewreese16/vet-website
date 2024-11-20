@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/appointment_list.css' %}">
+{% endblock head %}
+    
+{% block content %}
+<div class="appointments-page">
+    <h1>Appointments</h1>
+
+    {% if appointments %}
+        <ul class="appointments-list">
+            {% for appointment in appointments %}
+                <li class="appointment-item">
+                    <strong>{{ appointment.animal.name }}</strong> - 
+                    <span class="appointment-date">{{ appointment.appointment_date }}</span><br>
+                    <span class="appointment-notes">Notes: {{ appointment.notes }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="no-appointments">No appointments found.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock head %}
+
+{% block content %}
+<div class="home-page">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome</h1>
+        <p>Compassionate care for your furry friends, every step of the way.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>At [Your Vet Clinic Name], we pride ourselves on providing top-quality care for your pets. From routine check-ups to advanced treatments, we’re here for you and your furry family members.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Preventative Care</h3>
+                <p>Keep your pets healthy with vaccinations, wellness exams, and more.</p>
+            </div>
+            <div class="service-item">
+                <h3>Emergency Care</h3>
+                <p>24/7 support for urgent medical needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Surgery</h3>
+                <p>Advanced surgical care from experienced professionals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"They treated my dog with so much care and compassion."</p>
+            <cite>- A Happy Pet Owner</cite>
+        </blockquote>
+    </section>
+</div>
+{% endblock %}

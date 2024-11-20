@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Admin Dashboard</h2>
+
+<ul>
+    <li><a href="{% url 'admin_add_appointment' %}">Add Appointment</a></li>
+    <li><a href="{% url 'admin_add_note' %}">Add Note</a></li>
+    <li><a href="{% url 'admin_view_animals' %}">View Animals</a></li>
+    <li><a href="{% url 'admin_view_appointments' %}">View Appointments</a></li>
+</ul>
+{% endblock %}

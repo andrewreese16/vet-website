@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+
+    
+<form method="POST">
+    {% csrf_token %}
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" id="phone_number" name="phone_number" value="{{ profile.phone_number }}" required>
+    
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required>{{ profile.address }}</textarea>
+    
+    <button type="submit">Save Profile</button>
+</form>
+{% endblock content %}

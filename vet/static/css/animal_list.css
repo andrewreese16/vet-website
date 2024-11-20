@@ -1,0 +1,76 @@
+/* Animals Page Styles */
+
+/* General Container */
+.animals-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title */
+.animals-page h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4A90E2;
+  text-align: center;
+}
+
+/* Animal List */
+.animal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.animal-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.animal-item a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.animal-item:hover {
+  background-color: #E9F5FF;
+  transform: translateY(-5px);
+}
+
+.animal-item a:hover {
+  color: #0077FF;
+}
+
+/* No Animals Message */
+.no-animals {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Add Animal Button */
+.add-animal {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.add-animal-btn {
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.add-animal-btn:hover {
+  background-color: #357ABD;
+}

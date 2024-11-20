@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light modern background */
+  color: #333; /* Neutral text color */
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #2c7a7b; /* Modern teal color */
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 3px solid #38b2ac;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #38b2ac; /* Slight hover effect */
+  color: #fff;
+}
+
+header form {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+header form button {
+  background-color: #f56565; /* Modern red for logout */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header form button:hover {
+  background-color: #e53e3e;
+}
+
+/* Main Content */
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #2c7a7b;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 3px solid #38b2ac;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #38b2ac;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2c7a7b;
+}

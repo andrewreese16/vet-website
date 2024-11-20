@@ -1,0 +1,64 @@
+/* Appointments Page Styles */
+
+/* General Container */
+.appointments-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Title */
+.appointments-page h1 {
+  font-size: 2rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Appointment List */
+.appointments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.appointment-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.appointment-item strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.appointment-date {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.appointment-notes {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Hover Effect */
+.appointment-item:hover {
+  background-color: #e9f5ff;
+  transform: translateY(-5px);
+}
+
+/* No Appointments Message */
+.no-appointments {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}

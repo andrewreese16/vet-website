@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/schedule_appointment.css' %}">
+{% endblock head %}
+    
+{% block content %}
+<div class="schedule-appointment-page">
+    <h2>Schedule an Appointment</h2>
+
+    <form method="POST" class="appointment-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ form.animal.id_for_label }}">Animal</label>
+            {{ form.animal }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.appointment_date.id_for_label }}">Appointment Date</label>
+            {{ form.appointment_date }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.notes.id_for_label }}">Notes</label>
+            {{ form.notes }}
+        </div>
+        <button type="submit" class="submit-btn">Schedule Appointment</button>
+    </form>
+</div>
+{% endblock %}
